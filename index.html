@@ -11,7 +11,7 @@
       <a-assets>
         <img
           id="floor"
-          src="https://cdn.glitch.com/1ffc88f1-88b9-43fa-8d37-582ae4d48d43%2Ffloor2.jpg?v=1601333382154"
+          src="https://cdn.glitch.com/1ffc88f1-88b9-43fa-8d37-582ae4d48d43%2Ffloor.jpg?v=1601846116152"
         />
         <a-gltf-model
           id="bottle"
@@ -25,7 +25,7 @@
         </a-gltf-model>
         <a-gltf-model
           id="tv"
-          src="https://cdn.glitch.com/1ffc88f1-88b9-43fa-8d37-582ae4d48d43%2Ftv.glb?v=1601418874331"
+          src="https://cdn.glitch.com/1ffc88f1-88b9-43fa-8d37-582ae4d48d43%2Ftv%20(2).glb?v=1601846454503"
         >
         </a-gltf-model>
         <a-gltf-model
@@ -67,10 +67,16 @@
       <a-entity gltf-model="#bottle" position="2 0 9" rotation="0 90 0" scale =".005 .005 .005">
       </a-entity>
       <a-camera
-        position ="0 1 0">
+        position ="0 1.6 0"
+        >
                 <a-cursor color="#FF0000" />
       </a-camera>
-      
+      <a-entity camera="active: true"
+                look-controls
+                wasd-controls
+                position =" 0 1.6 0"
+                data-aframe-default-camera
+      ></a-entity>
       <a-entity
         gltf-model="#couch"
         position="-4 0.25 0"
@@ -89,7 +95,7 @@
       <a-entity
         gltf-model="#tv"
         position="4 .75 0"
-        scale=".25 .25 .25"
+        scale=".01 .01 .01"
         rotation="0 -90 0"
       >
       </a-entity>
